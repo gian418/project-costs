@@ -15,14 +15,15 @@ function App() {
         <Link to="/newproject">Novo Projeto</Link>
       </div>
 
-      <Routes>
-        <Container>
+      <Container customClass="min-height">
+        <Routes>
           <Route exact path='/' element={<Home/>} />
           <Route exact path='/company' element={<Company/>} />
           <Route exact path='/contact' element={<Contact/>} />
           <Route exact path='/newproject' element={<NewProject/>} />
-        </Container>
-      </Routes>
+        </Routes>
+      </Container>
+      <p>Footer</p>
 
     </Router>
   );
